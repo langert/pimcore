@@ -677,7 +677,7 @@ class Multiselect extends Data implements
      */
     public function getPhpdocInputType(): ?string
     {
-        return 'array|null';
+        return 'string[]|null';
     }
 
     /**
@@ -685,7 +685,7 @@ class Multiselect extends Data implements
      */
     public function getPhpdocReturnType(): ?string
     {
-        return 'array|null';
+        return 'string[]|null';
     }
 
     /**
