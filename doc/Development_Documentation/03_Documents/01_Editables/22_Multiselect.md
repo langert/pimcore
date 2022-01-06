@@ -12,6 +12,7 @@ The Multiselect editable generates a **multiselect** box component in editmode.
 | `width`  | integer | Width of a generated block in editmode                                             |
 | `height` | integer | Height of a generated block in editmode                                            |
 | `class`  | string  | A CSS class that is added to the surrounding container of this element in editmode |
+| `default`  | array  | Values for the default selected options |
 
 ## Methods
 
@@ -34,7 +35,8 @@ Also, it shows the list of chosen elements in the frontend.
             ['cars', 'Cars'],
             ['motorcycles', 'Motorcycles'],
             ['accessories', 'Accessories'],
-        ]
+        ],
+        'default': ['cars','motorcycles']
     }) }}
 {% else %}
     <p>{{ 'This page is linked to' | trans }}
